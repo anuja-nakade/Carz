@@ -1,8 +1,6 @@
 package com.rental.android.sixt.view;
 
 import android.content.Intent;
-import android.media.Image;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.LinearLayoutManager;
@@ -78,6 +76,9 @@ public class CarsActivity extends CarsBaseApplication implements CarsView {
 
     @Override
     public void showWait() {
+
+        networkError.setVisibility(View.GONE);
+        retry.setVisibility(View.GONE);
         progressBar.setVisibility(View.VISIBLE);
     }
 
