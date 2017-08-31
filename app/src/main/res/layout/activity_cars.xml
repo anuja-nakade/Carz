@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.CarsActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listCars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#00000000" />
+
+    <TextView
+        android:id="@+id/showError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:text="@string/error_msg"
+        android:textColor="@color/colorOrange"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showError"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_refresh"
+        android:text="Retry"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+
+    <ProgressBar
+        android:id="@+id/progressListCars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/maps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="12dp"
+        android:src="@drawable/place" />
+
+</RelativeLayout>
